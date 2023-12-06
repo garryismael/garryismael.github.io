@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="assets/css/inter.css" />
     <link href="assets/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/aos.css" />
     <link href="assets/css/main.css" rel="stylesheet" />
   </head>
   <body>
@@ -43,7 +44,7 @@
     <!-- END HEADER  -->
     <!-- HERO -->
     <section class="section__hero">
-      <div class="flex-1 basis-full">
+      <div class="flex-1 basis-full" data-aos="fade-right" data-aos-duration="1000">
         <div class="flex items-center">
           <h1 class="text-sm lg:text-base">Hello Everyone</h1>
           <img
@@ -78,7 +79,7 @@
         </div>
       </div>
 
-      <div class="relative pt-4 flex-1 basis-4/5 md:pt-0">
+      <div class="relative pt-4 flex-1 basis-4/5 md:pt-0" data-aos="zoom-in" data-aos-duration="3000">
         <img
           src="assets/images/hero.svg"
           alt="hero"
@@ -98,25 +99,27 @@
           width="510"
           height="489"
           class="hidden md:inline md:w-1/2 h-full"
+          data-aos="fade-up"
+          data-aos-duration="1000"
         />
         <div class="flex flex-col text-base text-justify lg:basis-1/2">
-          <h1 class="title">About Me</h1>
-          <p class="mb-3 padding-t lg:text-lg">
+          <h1 class="title" data-aos="fade-up" data-aos-duration="1000">About Me</h1>
+          <p class="mb-3 padding-t lg:text-lg" data-aos="fade-up" data-aos-duration="1200">
             Hello, my name is TAHINJANAHARY Josimar Garry Ismaël. I am a
             full-stack developer and interested in web development and
             conception of application.
           </p>
-          <p class="lg:text-lg">
+          <p class="lg:text-lg" data-aos="fade-up" data-aos-duration="1300">
             I graduated from ENI, the National School of Computer Science in
             Madagascar, and obtained a degree in computer science engineering.
             Since my childhood, I have been passionate about technology. I enjoy
             challenges, am a fast learner, and can adapt quickly to any
             situation.
           </p>
-          <div class="socials flex items-center gap-4">
-            <p class="text-sm lg:text-base">Follow me</p>
+          <div class="socials flex items-center gap-4" >
+            <p class="text-sm lg:text-base" data-aos="fade-up" data-aos-duration="1400">Follow me</p>
             <div class="flex items-center gap-3">
-              <a href="">
+              <a href="" data-aos="fade-up" data-aos-duration="1500">
                 <img
                   src="assets/images/facebook.png"
                   alt="facebook"
@@ -124,7 +127,7 @@
                   height="50"
                 />
               </a>
-              <a href="">
+              <a href="" data-aos="fade-up" data-aos-duration="1550">
                 <img
                   src="assets/images/instagram.png"
                   alt="instagram"
@@ -132,7 +135,7 @@
                   height="50"
                 />
               </a>
-              <a href="">
+              <a href="" data-aos="fade-up" data-aos-duration="1600">
                 <img
                   src="assets/images/linkedin.png"
                   alt="linkedin"
@@ -140,7 +143,7 @@
                   height="50"
                 />
               </a>
-              <a href="">
+              <a href="" data-aos="fade-up" data-aos-duration="1650">
                 <img
                   src="assets/images/twitter.png"
                   alt="twitter"
@@ -153,8 +156,8 @@
           <div
             class="font-semibold flex flex-col md:flex-row text-center gap-4 mt-6 lg:text-lg"
           >
-            <a href="#" class="bg-brand-600 btn rounded-full">View Works</a>
-            <a href="#" class="border border-white btn rounded-full">
+            <a href="#" class="bg-brand-600 btn rounded-full" data-aos="fade-up" data-aos-duration="1800">View Works</a>
+            <a href="#" class="border border-white btn rounded-full" data-aos="fade-up" data-aos-duration="1900">
               <span class="mr-2">Download CV</span>
               <i class="fa-solid fa-download"></i>
             </a>
@@ -173,7 +176,7 @@
       <div
         class="flex flex-col items-center gap-9 mt-6 w-full h-auto lg:flex-row"
       >
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-duration="2000">
           <div class="flex items-center gap-6">
             <div class="icon bg-brand-600">
               <i class="fa-solid fa-code"></i>
@@ -189,7 +192,7 @@
             <i class="fa-solid fa-arrow-right"></i>
           </a>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-duration="2000">
           <div class="flex items-center gap-6">
             <div class="icon bg-pink-600">
               <i class="fa-solid fa-mobile-screen"></i>
@@ -205,7 +208,7 @@
             <i class="fa-solid fa-arrow-right"></i>
           </a>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-duration="3000">
           <div class="flex items-center gap-6">
             <div class="icon bg-green-600">
               <i class="fa-solid fa-person-chalkboard"></i>
@@ -230,79 +233,101 @@
       <div
         class="padding-t flex items-center justify-center gap-6 content-between flex-wrap lg:justify-between"
       >
-        <div class="flex flex-col items-center justify-center">
+        <div class="flex flex-col items-center justify-center" data-aos="fade-up" data-aos-duration="1000">
           <circle-progress
             value="80"
             max="100"
             text-format="percent"
           ></circle-progress>
-          <p class="text-lg font-bold uppercase text-center md:text-xl lg:text-2xl">java</p>
+          <p
+            class="text-lg font-bold uppercase text-center md:text-xl lg:text-2xl"
+          >
+            java
+          </p>
         </div>
-        <div class="flex flex-col items-center justify-center">
+        <div class="flex flex-col items-center justify-center" data-aos="fade-up" data-aos-duration="1200">
           <circle-progress
             value="80"
             max="100"
             text-format="percent"
           ></circle-progress>
-          <p class="text-lg font-bold uppercase text-center md:text-xl lg:text-2xl">
+          <p
+            class="text-lg font-bold uppercase text-center md:text-xl lg:text-2xl"
+          >
             python
           </p>
         </div>
-        <div class="flex flex-col items-center justify-center">
+        <div class="flex flex-col items-center justify-center" data-aos="fade-up" data-aos-duration="1300">
           <circle-progress
             value="80"
             max="100"
             text-format="percent"
           ></circle-progress>
-          <p class="text-lg font-bold uppercase text-center md:text-xl lg:text-2xl">
+          <p
+            class="text-lg font-bold uppercase text-center md:text-xl lg:text-2xl"
+          >
             angular
           </p>
         </div>
-        <div class="flex flex-col items-center justify-center">
+        <div class="flex flex-col items-center justify-center" data-aos="fade-up" data-aos-duration="1400">
           <circle-progress
             value="80"
             max="100"
             text-format="percent"
           ></circle-progress>
-          <p class="text-lg font-bold uppercase text-center md:text-xl lg:text-2xl">
+          <p
+            class="text-lg font-bold uppercase text-center md:text-xl lg:text-2xl"
+          >
             react
           </p>
         </div>
-        <div class="flex flex-col items-center justify-center">
+        <div class="flex flex-col items-center justify-center" data-aos="fade-up" data-aos-duration="1500">
           <circle-progress
             value="80"
             max="100"
             text-format="percent"
           ></circle-progress>
-          <p class="text-lg font-bold uppercase text-center md:text-xl lg:text-2xl">
+          <p
+            class="text-lg font-bold uppercase text-center md:text-xl lg:text-2xl"
+          >
             typescript
           </p>
         </div>
-        <div class="flex flex-col items-center justify-center">
+        <div class="flex flex-col items-center justify-center" data-aos="fade-up" data-aos-duration="1600">
           <circle-progress
             value="80"
             max="100"
             text-format="percent"
           ></circle-progress>
-          <p class="text-lg font-bold uppercase text-center md:text-xl lg:text-2xl">
+          <p
+            class="text-lg font-bold uppercase text-center md:text-xl lg:text-2xl"
+          >
             javascript
           </p>
         </div>
-        <div class="flex flex-col items-center justify-center">
+        <div class="flex flex-col items-center justify-center" data-aos="fade-up" data-aos-duration="1700">
           <circle-progress
             value="80"
             max="100"
             text-format="percent"
           ></circle-progress>
-          <p class="text-lg font-bold uppercase text-center md:text-xl lg:text-2xl">css</p>
+          <p
+            class="text-lg font-bold uppercase text-center md:text-xl lg:text-2xl"
+          >
+            css
+          </p>
         </div>
-        <div class="flex flex-col items-center justify-center">
+        <div class="flex flex-col items-center justify-center" data-aos="fade-up" data-aos-duration="1800">
           <circle-progress
             value="80"
             max="100"
             text-format="percent"
           ></circle-progress>
-          <p class="text-lg font-bold uppercase text-center md:text-xl lg:text-2xl">UML</p>
+          <p
+            class="text-lg font-bold uppercase text-center md:text-xl lg:text-2xl"
+          >
+            UML
+          </p>
         </div>
       </div>
     </section>
@@ -310,7 +335,7 @@
     <!-- EXPERIENCES -->
     <section class="padding">
       <h1 class="title">My Work Experiences</h1>
-      <div class="swiper padding-t">
+      <div class="swiper padding-t" data-aos="fade-up" data-aos-duration="2000">
         <div class="swiper-wrapper">
           <div
             class="swiper-slide p-6 border border-white rounded-3xl !flex flex-col gap-2"
@@ -368,11 +393,11 @@
     <!-- PROJECTS -->
     <section class="section__projects padding">
       <h1 class="title">Featured Projects</h1>
-      <p class="padding-t text-base lg:text-lg">
+      <p class="padding-t text-base lg:text-lg" >
         I have worked on many projects over the course of being a Web Developer,
         here are a few of my live, real-world projects
       </p>
-      <div class="swiper flex mt-6 overflow-x-hidden">
+      <div class="swiper flex mt-6 overflow-x-hidden" data-aos="fade-up" data-aos-duration="2000">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <img
@@ -485,11 +510,16 @@
       <h1 class="title">Get in Touch</h1>
       <p class="padding-t lg:text-lg">Satisfied with me? Please contact me.</p>
       <div class="mt-6 flex">
-        <div class="hidden lg:flex lg:flex-col lg:flex-1 lg:basis-1/2 lg:text-lg">
+        <div
+          class="hidden lg:flex lg:flex-col lg:flex-1 lg:basis-1/2 lg:text-lg"
+          data-aos="fade-up" data-aos-duration="3000"
+        >
           <h1 class="text-3xl font-semibold mb-6">Contact Info</h1>
           <div class="flex items-center gap-2 mb-4">
             <i class="fa-solid fa-location-dot text-2xl"></i>
-            <span class="text-md-regular">Tanambao, Fianarantsoa, Madagascar</span>
+            <span class="text-md-regular"
+              >Tanambao, Fianarantsoa, Madagascar</span
+            >
           </div>
           <div class="flex items-center gap-2 mb-4">
             <i class="fa-solid fa-phone text-2xl"></i>
@@ -497,12 +527,14 @@
           </div>
           <div class="flex items-center gap-2 mb-4">
             <i class="fa-regular fa-envelope text-2xl"></i>
-            <span class="text-md-regular">tahinjanaharygarry&#64;gmail.com</span>
+            <span class="text-md-regular"
+              >tahinjanaharygarry&#64;gmail.com</span
+            >
           </div>
         </div>
         <form class="form lg:text-lg">
           <div class="group">
-            <div class="form-group">
+            <div class="form-group" data-aos="fade-up" data-aos-duration="1000">
               <label for="firstName">First Name</label>
               <input
                 id="firstName"
@@ -510,17 +542,21 @@
                 placeholder="Your first name"
               />
             </div>
-            <div class="form-group">
+            <div class="form-group" data-aos="fade-up" data-aos-duration="1000">
               <label for="lastName">Last Name</label>
-              <input id="lastName" name="lastName" placeholder="Your last name" />
+              <input
+                id="lastName"
+                name="lastName"
+                placeholder="Your last name"
+              />
             </div>
           </div>
           <div class="group">
-            <div class="form-group">
+            <div class="form-group" data-aos="fade-up" data-aos-duration="1200">
               <label for="email">Email</label>
               <input id="email" name="email" placeholder="Your email address" />
             </div>
-            <div class="form-group">
+            <div class="form-group" data-aos="fade-up" data-aos-duration="1200">
               <label for="subject">Subject</label>
               <input
                 id="subject"
@@ -529,7 +565,7 @@
               />
             </div>
           </div>
-          <div class="form-group">
+          <div class="form-group" data-aos="fade-up" data-aos-duration="1300">
             <label for="message" class="text-sm-medium">Message</label>
             <textarea
               rows="8"
@@ -538,7 +574,7 @@
               class="text-base"
             ></textarea>
           </div>
-          <button class="font-semibold bg-brand-600 btn rounded-full md:w-fit">
+          <button class="font-semibold bg-brand-600 btn rounded-full md:w-fit" data-aos="fade-up" data-aos-duration="1350">
             <span class="mr-2">Send Message</span>
             <i class="fa-regular fa-paper-plane"></i>
           </button>
@@ -549,7 +585,7 @@
     <!-- FOOTER -->
     <footer class="padding pb-8">
       <div class="flex flex-wrap gap-6 justify-between pb-8">
-        <div class="flex-1 basis-full md:basis-0">
+        <div class="flex-1 basis-full md:basis-0" data-aos="fade-up" data-aos-duration="1000">
           <h1 class="text-xl font-bold lg:text-2xl">Garry.</h1>
           <div class="contacts">
             <div>
@@ -562,11 +598,13 @@
             </div>
             <div>
               <i class="fa-regular fa-envelope text-xl"></i>
-              <p class="break-words lg:text-lg">tahinjanaharygarry&#64;gmail.com</p>
+              <p class="break-words lg:text-lg">
+                tahinjanaharygarry&#64;gmail.com
+              </p>
             </div>
           </div>
         </div>
-        <div class="flex-1">
+        <div class="flex-1" data-aos="fade-up" data-aos-duration="1200">
           <h1 class="text-xl font-bold lg:text-2xl">Social</h1>
           <ul class="lg:text-lg">
             <li>
@@ -583,7 +621,7 @@
             </li>
           </ul>
         </div>
-        <div class="flex-1">
+        <div class="flex-1" data-aos="fade-up" data-aos-duration="1400">
           <h1 class="text-xl font-bold lg:text-2xl">Services</h1>
           <ul class="lg:text-lg">
             <li>
@@ -597,7 +635,7 @@
             </li>
           </ul>
         </div>
-        <div class="flex-1">
+        <div class="flex-1" data-aos="fade-up" data-aos-duration="1400">
           <h1 class="text-xl font-bold lg:text-2xl">Menu</h1>
           <ul class="lg:text-lg">
             <li>
@@ -620,7 +658,7 @@
             </li>
           </ul>
         </div>
-        <div class="flex-1">
+        <div class="flex-1" data-aos="fade-up" data-aos-duration="1800">
           <h1 class="text-xl font-bold lg:text-2xl">Ressource</h1>
           <ul class="lg:text-lg">
             <li>
@@ -633,8 +671,8 @@
         class="py-8 text-sm text-center border-t border-t-white border-opacity-20 flex flex-col gap-6 lg:flex-row lg:justify-between lg:text-base"
       >
         <p>
-          Copyright &copy; <span id="year"></span> TAHINJANAHARY Josimar Garry Ismaël - All rights
-          reserved.
+          Copyright &copy; <span id="year"></span> TAHINJANAHARY Josimar Garry
+          Ismaël - All rights reserved.
         </p>
         <div class="flex items-center justify-center gap-2">
           <span>Privacy</span>
@@ -643,10 +681,11 @@
         </div>
       </div>
     </footer>
-    
+
     <!-- END FOOTER -->
     <script src="assets/js/circle-progress.min.js" type="module"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/aos.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>
