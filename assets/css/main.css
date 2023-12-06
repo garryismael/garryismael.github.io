@@ -796,12 +796,12 @@ video {
   padding-bottom: 2rem;
 }
 
-.pt-4 {
-  padding-top: 1rem;
-}
-
 .pb-8 {
   padding-bottom: 2rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
 }
 
 .text-center {
@@ -903,8 +903,15 @@ body {
 }
 
 circle-progress::part(base) {
-  width: 150px;
-  height: 150px;
+  height: 9rem;
+  width: 9rem;
+}
+
+@media (min-width: 1024px) {
+  circle-progress::part(base) {
+    height: 16.5rem;
+    width: 16.5rem;
+  }
 }
 
 circle-progress::part(circle) {

@@ -40,8 +40,7 @@ body {
 }
 
 circle-progress::part(base) {
-  width: 150px;
-  height: 150px;
+  @apply w-36 h-36 lg:w-[16.5rem] lg:h-[16.5rem];
 }
 
 circle-progress::part(circle) {
