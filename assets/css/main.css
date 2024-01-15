@@ -681,6 +681,30 @@ video {
   height: 300px;
 }
 
+.h-\[290px\] {
+  height: 290px;
+}
+
+.h-\[280px\] {
+  height: 280px;
+}
+
+.h-\[200px\] {
+  height: 200px;
+}
+
+.h-16 {
+  height: 4rem;
+}
+
+.h-56 {
+  height: 14rem;
+}
+
+.h-64 {
+  height: 16rem;
+}
+
 .w-5 {
   width: 1.25rem;
 }
@@ -796,6 +820,11 @@ video {
 .bg-pink-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(219 39 119 / var(--tw-bg-opacity));
+}
+
+.object-fill {
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .p-6 {
