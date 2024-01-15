@@ -657,6 +657,14 @@ video {
   height: 1.25rem;
 }
 
+.h-64 {
+  height: 16rem;
+}
+
+.h-\[300px\] {
+  height: 300px;
+}
+
 .h-auto {
   height: auto;
 }
@@ -665,44 +673,8 @@ video {
   height: 100%;
 }
 
-.h-96 {
-  height: 24rem;
-}
-
 .h-80 {
   height: 20rem;
-}
-
-.h-72 {
-  height: 18rem;
-}
-
-.h-\[300px\] {
-  height: 300px;
-}
-
-.h-\[290px\] {
-  height: 290px;
-}
-
-.h-\[280px\] {
-  height: 280px;
-}
-
-.h-\[200px\] {
-  height: 200px;
-}
-
-.h-16 {
-  height: 4rem;
-}
-
-.h-56 {
-  height: 14rem;
-}
-
-.h-64 {
-  height: 16rem;
 }
 
 .w-5 {
@@ -1227,7 +1199,7 @@ circle-progress::part(value) {
 
 .section__services .card {
   display: flex;
-  height: 18rem;
+  height: 20rem;
   flex-direction: column;
   gap: 1.5rem;
   border-radius: 1.5rem;

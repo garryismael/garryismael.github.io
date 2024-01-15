@@ -203,7 +203,7 @@ circle-progress::part(value) {
 }
 
 .section__services .card {
-  @apply flex flex-col border border-white rounded-3xl p-6 gap-6 lg:w-96 md:w-full h-72 lg:h-96;
+  @apply flex flex-col border border-white rounded-3xl p-6 gap-6 lg:w-96 md:w-full h-80 lg:h-96;
 }
 
 .section__services .card .icon {
