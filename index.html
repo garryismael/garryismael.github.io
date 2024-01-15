@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Garry - Portfolio</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/inter.css" />
@@ -16,24 +17,27 @@
       <nav class="active">
         <ul>
           <li>
-            <a href="#">Home</a>
+            <a href="#home">Home</a>
           </li>
           <li>
-            <a href="#">About</a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="#">Service</a>
+            <a href="#services">Service</a>
           </li>
           <li>
-            <a href="#">Skills</a>
+            <a href="#skills">Skills</a>
           </li>
           <li>
-            <a href="#">Project</a>
+            <a href="#experiences">Experiences</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
           </li>
         </ul>
         <ul>
           <li>
-            <a href="#" class="btn rounded-full border border-white">Contact</a>
+            <a href="#contact" class="btn rounded-full border border-white">Contact</a>
           </li>
         </ul>
       </nav>
@@ -43,43 +47,70 @@
     </header>
     <!-- END HEADER  -->
     <!-- HERO -->
-    <section class="section__hero">
-      <div class="flex-1 basis-full" data-aos="fade-right" data-aos-duration="1000">
+    <section class="section__hero" id="home">
+      <div class="flex-1 basis-full">
         <div class="flex items-center">
-          <h1 class="text-sm lg:text-base">Hello Everyone</h1>
+          <h1
+            class="text-sm lg:text-base"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            Hello Everyone
+          </h1>
           <img
             src="assets/images/wave.png"
             alt="wave emoji"
             height="24"
             width="24"
             class="w-5 h-5"
+            data-aos="fade-up"
+            data-aos-duration="1600"
           />
         </div>
         <h1
           class="text-3xl font-bold text-gradient py-4 md:text-4xl lg:text-7xl lg:py-12"
+          data-aos="fade-up"
+          data-aos-duration="1500"
         >
           I am Garry Ismaël, <br />a full-stack developer
         </h1>
         <div class="text-base mb-4 lg:mb-10 lg:text-lg">
-          <p class="mb-2">
+          <p class="mb-2" data-aos="fade-up" data-aos-duration="1600">
             Hi, I’m Garry, a passionate full-stack developer and engineer from
             Madagascar.
           </p>
-          <p>My specialization lines into building user-friendly websites.</p>
+          <p data-aos="fade-up" data-aos-duration="1700">
+            My specialization lines into building user-friendly websites.
+          </p>
         </div>
 
         <div
           class="text-base font-semibold flex flex-col text-center gap-4 md:flex-row lg:text-lg"
         >
-          <a href="#" class="bg-brand-600 btn rounded-full">Hire Me</a>
-          <a href="#" class="border border-white btn rounded-full">
+          <a
+            href="#"
+            class="bg-brand-600 btn rounded-full"
+            data-aos="fade-up"
+            data-aos-duration="1800"
+            >Hire Me</a
+          >
+          <a
+            href="#"
+            class="border border-white btn rounded-full"
+            data-aos="fade-up"
+            data-aos-duration="1900"
+          >
             <span class="mr-2">Download CV</span>
             <i class="fa-solid fa-download"></i>
           </a>
         </div>
       </div>
 
-      <div class="relative pt-4 flex-1 basis-4/5 md:pt-0" data-aos="zoom-in" data-aos-duration="3000">
+      <div
+        class="relative pt-4 flex-1 basis-4/5 md:pt-0"
+        data-aos="fade-left"
+        data-aos-duration="3000"
+      >
         <img
           src="assets/images/hero.svg"
           alt="hero"
@@ -91,7 +122,7 @@
     </section>
     <!-- END HERO -->
     <!-- ABOUT ME -->
-    <section class="section__about_me">
+    <section class="section__about_me" id="about">
       <div class="flex items-center justify-between">
         <img
           src="assets/images/about-me.png"
@@ -103,8 +134,14 @@
           data-aos-duration="1000"
         />
         <div class="flex flex-col text-base text-justify lg:basis-1/2">
-          <h1 class="title" data-aos="fade-up" data-aos-duration="1000">About Me</h1>
-          <p class="mb-3 padding-t lg:text-lg" data-aos="fade-up" data-aos-duration="1200">
+          <h1 class="title" data-aos="fade-up" data-aos-duration="1000">
+            About Me
+          </h1>
+          <p
+            class="mb-3 padding-t lg:text-lg"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+          >
             Hello, my name is TAHINJANAHARY Josimar Garry Ismaël. I am a
             full-stack developer and interested in web development and
             conception of application.
@@ -116,10 +153,16 @@
             challenges, am a fast learner, and can adapt quickly to any
             situation.
           </p>
-          <div class="socials flex items-center gap-4" >
-            <p class="text-sm lg:text-base" data-aos="fade-up" data-aos-duration="1400">Follow me</p>
+          <div class="socials flex items-center gap-4">
+            <p
+              class="text-sm lg:text-base"
+              data-aos="fade-up"
+              data-aos-duration="1400"
+            >
+              Follow me
+            </p>
             <div class="flex items-center gap-3">
-              <a href="" data-aos="fade-up" data-aos-duration="1500">
+              <a href="" data-aos="fade-up" data-aos-duration="1400">
                 <img
                   src="assets/images/facebook.png"
                   alt="facebook"
@@ -127,7 +170,7 @@
                   height="50"
                 />
               </a>
-              <a href="" data-aos="fade-up" data-aos-duration="1550">
+              <a href="" data-aos="fade-up" data-aos-duration="1500">
                 <img
                   src="assets/images/instagram.png"
                   alt="instagram"
@@ -143,7 +186,7 @@
                   height="50"
                 />
               </a>
-              <a href="" data-aos="fade-up" data-aos-duration="1650">
+              <a href="" data-aos="fade-up" data-aos-duration="1700">
                 <img
                   src="assets/images/twitter.png"
                   alt="twitter"
@@ -156,8 +199,19 @@
           <div
             class="font-semibold flex flex-col md:flex-row text-center gap-4 mt-6 lg:text-lg"
           >
-            <a href="#" class="bg-brand-600 btn rounded-full" data-aos="fade-up" data-aos-duration="1800">View Works</a>
-            <a href="#" class="border border-white btn rounded-full" data-aos="fade-up" data-aos-duration="1900">
+            <a
+              href="#"
+              class="bg-brand-600 btn rounded-full"
+              data-aos="fade-up"
+              data-aos-duration="1800"
+              >View Works</a
+            >
+            <a
+              href="#"
+              class="border border-white btn rounded-full"
+              data-aos="fade-up"
+              data-aos-duration="1900"
+            >
               <span class="mr-2">Download CV</span>
               <i class="fa-solid fa-download"></i>
             </a>
@@ -167,14 +221,20 @@
     </section>
     <!-- END ABOUT ME -->
     <!-- SERVICES -->
-    <section class="section__services">
-      <h1 class="title">My Services</h1>
-      <p class="padding-t lg:text-lg">
+    <section class="section__services" id="services">
+      <h1 class="title" data-aos="fade-up" data-aos-duration="1600">
+        My Services
+      </h1>
+      <p
+        class="padding-t lg:text-lg"
+        data-aos="fade-up"
+        data-aos-duration="1800"
+      >
         Here are some services that I can offer. Let's collaborate to bring your
         vision to fruition.
       </p>
       <div
-        class="flex flex-col items-center gap-9 mt-6 w-full h-auto lg:flex-row"
+        class="flex flex-col items-center gap-9 mt-6 w-full h-auto lg:flex-row lg:justify-between"
       >
         <div class="card" data-aos="fade-up" data-aos-duration="2000">
           <div class="flex items-center gap-6">
@@ -184,8 +244,9 @@
             <h1 class="text-xl font-bold md:text-2xl">Web Development</h1>
           </div>
           <p class="text-base lg:text-lg">
-            Lorem ipsum dolor sit amet, consectetur the adipiscing elit. Sed
-            quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.
+            Turn your concepts into a live website—whether it's a simple one or
+            a bit fancier, I've got you covered. I can bring your ideas to life
+            and make your online presence stand out.
           </p>
           <a>
             <span class="mr-2">Contact Me</span>
@@ -200,8 +261,9 @@
             <h1 class="text-xl font-bold md:text-2xl">Mobile Development</h1>
           </div>
           <p class="text-base lg:text-lg">
-            Lorem ipsum dolor sit amet, consectetur the adipiscing elit. Sed
-            quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.
+            If you're considering mobile development, I specialize in creating
+            applications for both Android and iOS platforms. Let's turn your
+            mobile app ideas into reality.
           </p>
           <a>
             <span class="mr-2">Contact Me</span>
@@ -216,8 +278,9 @@
             <h1 class="text-xl font-bold md:text-2xl">Teaching</h1>
           </div>
           <p class="text-base lg:text-lg">
-            Lorem ipsum dolor sit amet, consectetur the adipiscing elit. Sed
-            quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.
+            I provide concise courses on relevant technologies, covering both
+            basics and advanced topics. My aim is to help you understand
+            fundamental concepts efficiently.
           </p>
           <a>
             <span class="mr-2">Contact Me</span>
@@ -228,14 +291,20 @@
     </section>
     <!-- END SERVICES -->
     <!-- SKILLS -->
-    <section class="section__skills">
-      <h1 class="title">My Skills</h1>
+    <section class="section__skills" id="skills">
+      <h1 class="title" data-aos="fade-up" data-aos-duration="1000">
+        My Skills
+      </h1>
       <div
         class="padding-t flex items-center justify-center gap-6 content-between flex-wrap lg:justify-between"
       >
-        <div class="flex flex-col items-center justify-center" data-aos="fade-up" data-aos-duration="1000">
+        <div
+          class="flex flex-col items-center justify-center"
+          data-aos="fade-up"
+          data-aos-duration="1100"
+        >
           <circle-progress
-            value="80"
+            value="90"
             max="100"
             text-format="percent"
           ></circle-progress>
@@ -245,9 +314,13 @@
             java
           </p>
         </div>
-        <div class="flex flex-col items-center justify-center" data-aos="fade-up" data-aos-duration="1200">
+        <div
+          class="flex flex-col items-center justify-center"
+          data-aos="fade-up"
+          data-aos-duration="1200"
+        >
           <circle-progress
-            value="80"
+            value="90"
             max="100"
             text-format="percent"
           ></circle-progress>
@@ -257,7 +330,11 @@
             python
           </p>
         </div>
-        <div class="flex flex-col items-center justify-center" data-aos="fade-up" data-aos-duration="1300">
+        <div
+          class="flex flex-col items-center justify-center"
+          data-aos="fade-up"
+          data-aos-duration="1300"
+        >
           <circle-progress
             value="80"
             max="100"
@@ -269,9 +346,13 @@
             angular
           </p>
         </div>
-        <div class="flex flex-col items-center justify-center" data-aos="fade-up" data-aos-duration="1400">
+        <div
+          class="flex flex-col items-center justify-center"
+          data-aos="fade-up"
+          data-aos-duration="1400"
+        >
           <circle-progress
-            value="80"
+            value="85"
             max="100"
             text-format="percent"
           ></circle-progress>
@@ -281,9 +362,13 @@
             react
           </p>
         </div>
-        <div class="flex flex-col items-center justify-center" data-aos="fade-up" data-aos-duration="1500">
+        <div
+          class="flex flex-col items-center justify-center"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
           <circle-progress
-            value="80"
+            value="85"
             max="100"
             text-format="percent"
           ></circle-progress>
@@ -293,9 +378,13 @@
             typescript
           </p>
         </div>
-        <div class="flex flex-col items-center justify-center" data-aos="fade-up" data-aos-duration="1600">
+        <div
+          class="flex flex-col items-center justify-center"
+          data-aos="fade-up"
+          data-aos-duration="1600"
+        >
           <circle-progress
-            value="80"
+            value="85"
             max="100"
             text-format="percent"
           ></circle-progress>
@@ -305,7 +394,11 @@
             javascript
           </p>
         </div>
-        <div class="flex flex-col items-center justify-center" data-aos="fade-up" data-aos-duration="1700">
+        <div
+          class="flex flex-col items-center justify-center"
+          data-aos="fade-up"
+          data-aos-duration="1700"
+        >
           <circle-progress
             value="80"
             max="100"
@@ -317,9 +410,13 @@
             css
           </p>
         </div>
-        <div class="flex flex-col items-center justify-center" data-aos="fade-up" data-aos-duration="1800">
+        <div
+          class="flex flex-col items-center justify-center"
+          data-aos="fade-up"
+          data-aos-duration="1800"
+        >
           <circle-progress
-            value="80"
+            value="90"
             max="100"
             text-format="percent"
           ></circle-progress>
@@ -333,19 +430,37 @@
     </section>
     <!-- END SKILLS -->
     <!-- EXPERIENCES -->
-    <section class="padding">
-      <h1 class="title">My Work Experiences</h1>
+    <section class="padding" id="experiences">
+      <h1 class="title" data-aos="fade-up" data-aos-duration="1800">
+        My Work Experiences
+      </h1>
       <div class="swiper padding-t" data-aos="fade-up" data-aos-duration="2000">
         <div class="swiper-wrapper">
           <div
             class="swiper-slide p-6 border border-white rounded-3xl !flex flex-col gap-2"
           >
-            <h1 class="text-base lg:text-lg">June 2013-2023</h1>
+            <h1 class="text-base lg:text-lg">June 2023-October 2023</h1>
             <h2 class="text-xl font-bold lg:text-2xl">Full-stack Developer</h2>
             <h3 class="text-xs lg:text-base">Trusty Labs</h3>
             <p class="text-base lg:text-lg">
-              Lorem ipsum dolor sit amet, consectetur the adipiscing elit. Sed
-              quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.
+              Integrated clean architecture principles to enhance software
+              maintainability and promote efficient component reuse.
+              Collaborated on the development of robust solutions for optimal
+              functionality.
+            </p>
+          </div>
+
+          <div
+            class="swiper-slide p-6 border border-white rounded-3xl !flex flex-col gap-2"
+          >
+            <h1 class="text-base lg:text-lg">October 2022-December 2022</h1>
+            <h2 class="text-xl font-bold lg:text-2xl">Full-stack Developer</h2>
+            <h3 class="text-xs lg:text-base">UGD</h3>
+            <p class="text-base lg:text-lg">
+              I was involved in conceiving and bringing to life a web and mobile
+              application designed for student tracking. Additionally, I played
+              a key part in the creation of microservices and conducted user
+              research to inform and enhance the development process.
             </p>
           </div>
 
@@ -353,35 +468,28 @@
             class="swiper-slide p-6 border border-white rounded-3xl !flex flex-col gap-2"
           >
             <h1 class="text-base lg:text-lg">June 2013-2023</h1>
-            <h2 class="text-xl font-bold lg:text-2xl">Full-stack Developer</h2>
-            <h3 class="text-xs lg:text-base">Trusty Labs</h3>
+            <h2 class="text-xl font-bold lg:text-2xl">Backend Developer</h2>
+            <h3 class="text-xs lg:text-base">AEENI</h3>
             <p class="text-base lg:text-lg">
-              Lorem ipsum dolor sit amet, consectetur the adipiscing elit. Sed
-              quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.
+              I took the lead in developing an API called "e-boom," a ticket
+              management system designed for welcoming newcomers at L'ENI. This
+              involved creating a solid backend structure to streamline the
+              process for handling new arrivals.
             </p>
           </div>
 
           <div
             class="swiper-slide p-6 border border-white rounded-3xl !flex flex-col gap-2"
           >
-            <h1 class="text-base lg:text-lg">June 2013-2023</h1>
+            <h1 class="text-base lg:text-lg">Mars 2021-Juin 2021</h1>
             <h2 class="text-xl font-bold lg:text-2xl">Full-stack Developer</h2>
-            <h3 class="text-xs lg:text-base">Trusty Labs</h3>
+            <h3 class="text-xs lg:text-base">HAZENFIELD</h3>
             <p class="text-base lg:text-lg">
-              Lorem ipsum dolor sit amet, consectetur the adipiscing elit. Sed
-              quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.
-            </p>
-          </div>
-
-          <div
-            class="swiper-slide p-6 border border-white rounded-3xl !flex flex-col gap-2"
-          >
-            <h1 class="text-base lg:text-lg">June 2013-2023</h1>
-            <h2 class="text-xl font-bold lg:text-2xl">Full-stack Developer</h2>
-            <h3 class="text-xs lg:text-base">Trusty Labs</h3>
-            <p class="text-base lg:text-lg">
-              Lorem ipsum dolor sit amet, consectetur the adipiscing elit. Sed
-              quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.
+              I played a key role in both conceiving and contributing to the
+              creation of a platform named "Kaly" for managing orders and food deliveries for
+              restaurants. Additionally, I actively participated
+              in creating comprehensive tests to ensure the robustness and
+              reliability of the application.
             </p>
           </div>
         </div>
@@ -391,13 +499,23 @@
     </section>
     <!-- END EXPERIENCES -->
     <!-- PROJECTS -->
-    <section class="section__projects padding">
-      <h1 class="title">Featured Projects</h1>
-      <p class="padding-t text-base lg:text-lg" >
+    <section class="section__projects padding" id="projects">
+      <h1 class="title" data-aos="fade-up" data-aos-duration="1600">
+        Featured Projects
+      </h1>
+      <p
+        class="padding-t text-base lg:text-lg"
+        data-aos="fade-up"
+        data-aos-duration="1800"
+      >
         I have worked on many projects over the course of being a Web Developer,
         here are a few of my live, real-world projects
       </p>
-      <div class="swiper flex mt-6 overflow-x-hidden" data-aos="fade-up" data-aos-duration="2000">
+      <div
+        class="swiper flex mt-6 overflow-x-hidden"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <img
@@ -507,12 +625,21 @@
     <!-- END PROJECTS -->
     <!-- CONTACT -->
     <section class="section__contact">
-      <h1 class="title">Get in Touch</h1>
-      <p class="padding-t lg:text-lg">Satisfied with me? Please contact me.</p>
+      <h1 class="title" data-aos="fade-up" data-aos-duration="1000">
+        Get in Touch
+      </h1>
+      <p
+        class="padding-t lg:text-lg"
+        data-aos="fade-up"
+        data-aos-duration="1200"
+      >
+        Satisfied with me? Please contact me.
+      </p>
       <div class="mt-6 flex">
         <div
           class="hidden lg:flex lg:flex-col lg:flex-1 lg:basis-1/2 lg:text-lg"
-          data-aos="fade-up" data-aos-duration="3000"
+          data-aos="fade-up"
+          data-aos-duration="1300"
         >
           <h1 class="text-3xl font-semibold mb-6">Contact Info</h1>
           <div class="flex items-center gap-2 mb-4">
@@ -534,7 +661,7 @@
         </div>
         <form class="form lg:text-lg">
           <div class="group">
-            <div class="form-group" data-aos="fade-up" data-aos-duration="1000">
+            <div class="form-group" data-aos="fade-up" data-aos-duration="1200">
               <label for="firstName">First Name</label>
               <input
                 id="firstName"
@@ -542,7 +669,7 @@
                 placeholder="Your first name"
               />
             </div>
-            <div class="form-group" data-aos="fade-up" data-aos-duration="1000">
+            <div class="form-group" data-aos="fade-up" data-aos-duration="1300">
               <label for="lastName">Last Name</label>
               <input
                 id="lastName"
@@ -552,11 +679,11 @@
             </div>
           </div>
           <div class="group">
-            <div class="form-group" data-aos="fade-up" data-aos-duration="1200">
+            <div class="form-group" data-aos="fade-up" data-aos-duration="1400">
               <label for="email">Email</label>
               <input id="email" name="email" placeholder="Your email address" />
             </div>
-            <div class="form-group" data-aos="fade-up" data-aos-duration="1200">
+            <div class="form-group" data-aos="fade-up" data-aos-duration="1500">
               <label for="subject">Subject</label>
               <input
                 id="subject"
@@ -565,7 +692,7 @@
               />
             </div>
           </div>
-          <div class="form-group" data-aos="fade-up" data-aos-duration="1300">
+          <div class="form-group" data-aos="fade-up" data-aos-duration="1600">
             <label for="message" class="text-sm-medium">Message</label>
             <textarea
               rows="8"
@@ -574,7 +701,11 @@
               class="text-base"
             ></textarea>
           </div>
-          <button class="font-semibold bg-brand-600 btn rounded-full md:w-fit" data-aos="fade-up" data-aos-duration="1350">
+          <button
+            class="font-semibold bg-brand-600 btn rounded-full md:w-fit"
+            data-aos="fade-up"
+            data-aos-duration="1700"
+          >
             <span class="mr-2">Send Message</span>
             <i class="fa-regular fa-paper-plane"></i>
           </button>
@@ -584,8 +715,16 @@
     <!-- END CONTACT -->
     <!-- FOOTER -->
     <footer class="padding pb-8">
-      <div class="flex flex-wrap gap-6 justify-between pb-8">
-        <div class="flex-1 basis-full md:basis-0" data-aos="fade-up" data-aos-duration="1000">
+      <div
+        class="flex flex-wrap gap-6 justify-between pb-8"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <div
+          class="flex-1 basis-full md:basis-0"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <h1 class="text-xl font-bold lg:text-2xl">Garry.</h1>
           <div class="contacts">
             <div>
@@ -604,7 +743,7 @@
             </div>
           </div>
         </div>
-        <div class="flex-1" data-aos="fade-up" data-aos-duration="1200">
+        <div class="flex-1" data-aos="fade-up" data-aos-duration="1000">
           <h1 class="text-xl font-bold lg:text-2xl">Social</h1>
           <ul class="lg:text-lg">
             <li>
@@ -621,7 +760,7 @@
             </li>
           </ul>
         </div>
-        <div class="flex-1" data-aos="fade-up" data-aos-duration="1400">
+        <div class="flex-1" data-aos="fade-up" data-aos-duration="1000">
           <h1 class="text-xl font-bold lg:text-2xl">Services</h1>
           <ul class="lg:text-lg">
             <li>
@@ -635,7 +774,7 @@
             </li>
           </ul>
         </div>
-        <div class="flex-1" data-aos="fade-up" data-aos-duration="1400">
+        <div class="flex-1" data-aos="fade-up" data-aos-duration="1000">
           <h1 class="text-xl font-bold lg:text-2xl">Menu</h1>
           <ul class="lg:text-lg">
             <li>
@@ -658,7 +797,7 @@
             </li>
           </ul>
         </div>
-        <div class="flex-1" data-aos="fade-up" data-aos-duration="1800">
+        <div class="flex-1" data-aos="fade-up" data-aos-duration="1000">
           <h1 class="text-xl font-bold lg:text-2xl">Ressource</h1>
           <ul class="lg:text-lg">
             <li>

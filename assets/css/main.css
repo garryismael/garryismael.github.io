@@ -1038,6 +1038,7 @@ circle-progress::part(value) {
   right: 0px;
   z-index: 50;
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
   --tw-bg-opacity: 1;
@@ -1099,6 +1100,7 @@ circle-progress::part(value) {
 }
 
 .section__hero {
+  margin-top: 3rem;
   display: flex;
   flex-direction: column;
 }
@@ -1180,6 +1182,7 @@ circle-progress::part(value) {
 
 .section__services .card {
   display: flex;
+  height: 18rem;
   flex-direction: column;
   gap: 1.5rem;
   border-radius: 1.5rem;
@@ -1187,6 +1190,19 @@ circle-progress::part(value) {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
   padding: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .section__services .card {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section__services .card {
+    height: 24rem;
+    width: 24rem;
+  }
 }
 
 .section__services .card .icon {

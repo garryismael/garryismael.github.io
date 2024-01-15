@@ -163,7 +163,7 @@ circle-progress::part(value) {
 
 /* HEADER */
 .header {
-  @apply padding-x py-6 lg:py-8 bg-slate-950 fixed top-0 left-0 right-0 z-50 flex items-center justify-between;
+  @apply padding-x py-6 lg:py-8 bg-slate-950 fixed w-full top-0 left-0 right-0 z-50 flex items-center justify-between;
 }
 
 .header nav {
@@ -178,7 +178,7 @@ circle-progress::part(value) {
 
 /* HERO */
 .section__hero {
-  @apply padding flex flex-col md:flex-row md:justify-center md:items-center lg:h-screen lg:py-0;
+  @apply padding mt-12 flex flex-col md:flex-row md:justify-center md:items-center lg:h-screen lg:py-0;
 }
 /* END HERO */
 
@@ -203,7 +203,7 @@ circle-progress::part(value) {
 }
 
 .section__services .card {
-  @apply flex flex-col border border-white rounded-3xl p-6 gap-6;
+  @apply flex flex-col border border-white rounded-3xl p-6 gap-6 lg:w-96 md:w-full h-72 lg:h-96;
 }
 
 .section__services .card .icon {
