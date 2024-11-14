@@ -608,6 +608,10 @@ video {
   }
 }
 
+.static {
+  position: static;
+}
+
 .relative {
   position: relative;
 }
@@ -659,10 +663,6 @@ video {
 
 .h-64 {
   height: 16rem;
-}
-
-.h-80 {
-  height: 20rem;
 }
 
 .h-auto {
@@ -788,6 +788,11 @@ video {
 .bg-pink-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(219 39 119 / var(--tw-bg-opacity));
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .object-fill {
