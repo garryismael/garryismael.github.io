@@ -681,6 +681,38 @@ video {
   height: auto;
 }
 
+.max-h-72 {
+  max-height: 18rem;
+}
+
+.max-h-80 {
+  max-height: 20rem;
+}
+
+.max-h-96 {
+  max-height: 24rem;
+}
+
+.max-h-\[370px\] {
+  max-height: 370px;
+}
+
+.max-h-\[350px\] {
+  max-height: 350px;
+}
+
+.max-h-\[300px\] {
+  max-height: 300px;
+}
+
+.max-h-\[320px\] {
+  max-height: 320px;
+}
+
+.max-h-\[330px\] {
+  max-height: 330px;
+}
+
 .w-10 {
   width: 2.5rem;
 }
