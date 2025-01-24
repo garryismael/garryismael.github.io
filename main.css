@@ -16,7 +16,7 @@ html {
 
 body {
   font-family: "Inter";
-  @apply bg-slate-950 text-white;
+  @apply text-white bg-slate-950;
 }
 
 ::-webkit-scrollbar {
@@ -112,11 +112,11 @@ circle-progress::part(value) {
 }
 
 .swiper-pagination-bullet {
-  @apply bg-gray-200 w-2 h-2 my-0 mx-1 bottom-0;
+  @apply bottom-0 w-2 h-2 mx-1 my-0 bg-gray-200;
 }
 
 .swiper-pagination-bullet-active {
-  @apply bg-white w-3 h-3;
+  @apply w-3 h-3 bg-white;
 }
 
 .text-gradient {
@@ -157,13 +157,13 @@ circle-progress::part(value) {
   }
 
   .btn {
-    @apply py-3 px-4 md:px-4;
+    @apply px-4 py-3 md:px-4;
   }
 }
 
 /* HEADER */
 .header {
-  @apply padding-x py-6 lg:py-8 bg-slate-950 fixed w-full top-0 left-0 right-0 z-50 flex items-center justify-between;
+  @apply fixed top-0 left-0 right-0 z-50 flex items-center justify-between w-full py-6 padding-x lg:py-8 bg-slate-950;
 }
 
 .header nav {
@@ -178,7 +178,7 @@ circle-progress::part(value) {
 
 /* HERO */
 .section__hero {
-  @apply padding mt-12 flex flex-col md:flex-row md:justify-center md:items-center lg:h-screen lg:py-0;
+  @apply flex flex-col mt-12 padding md:flex-row md:justify-center md:items-center lg:h-screen lg:py-0;
 }
 /* END HERO */
 
@@ -203,7 +203,7 @@ circle-progress::part(value) {
 }
 
 .section__services .card {
-  @apply flex flex-col border border-white rounded-3xl p-6 gap-6 lg:w-96 md:w-full h-96 lg:h-96;
+  @apply flex flex-col justify-between gap-6 p-6 border border-white rounded-3xl lg:w-96 md:w-full lg:h-96;
 }
 
 .section__services .card .icon {
@@ -246,12 +246,12 @@ circle-progress::part(value) {
 
 .section__contact input,
 .section__contact textarea {
-  @apply rounded-lg border border-gray-300 p-4 bg-transparent outline-none text-white w-full;
+  @apply w-full p-4 text-white bg-transparent border border-gray-300 rounded-lg outline-none;
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
 }
 
 .section__contact .form-group {
-  @apply flex flex-col gap-2 w-full;
+  @apply flex flex-col w-full gap-2;
 }
 
 .section__contact .form {
@@ -275,11 +275,11 @@ footer h1 {
 }
 
 footer .contacts {
-  @apply flex flex-col flex-wrap gap-4 overflow-x-hidden mt-4;
+  @apply flex flex-col flex-wrap gap-4 mt-4 overflow-x-hidden;
 }
 
 footer .contacts > div {
-  @apply flex items-center gap-2 flex-wrap lg:flex-nowrap;
+  @apply flex flex-wrap items-center gap-2 lg:flex-nowrap;
 }
 
 /* END FOOTER */

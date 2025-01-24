@@ -20,9 +20,6 @@
             <a href="#home">Home</a>
           </li>
           <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
             <a href="#services">Services</a>
           </li>
           <li>
@@ -56,30 +53,23 @@
             class="text-sm lg:text-base"
             data-aos="fade-up"
             data-aos-duration="1500">
-            Hello Everyone
+            Hi, my name is
           </h1>
-          <img
-            src="assets/images/wave.png"
-            alt="wave emoji"
-            height="24"
-            width="24"
-            class="w-5 h-5"
-            data-aos="fade-up"
-            data-aos-duration="1600" />
         </div>
         <h1
-          class="py-4 text-3xl font-bold text-gradient md:text-4xl lg:text-7xl lg:py-12"
+          class="py-4 text-4xl font-bold max-w-fit text-gradient md:text-4xl lg:text-7xl lg:pt-10"
           data-aos="fade-up"
           data-aos-duration="1500">
-          I am Garry Ismaël, <br />a full-stack developer
+          Garry Ismaël.
+        </h1>
+        <h1 class="max-w-2xl py-4 text-3xl font-medium md:text-2xl lg:text-5xl lg:py-8">
+          I build user-friendly websites and mobile apps.
         </h1>
         <div class="mb-4 text-base lg:mb-10 lg:text-lg">
           <p class="mb-2" data-aos="fade-up" data-aos-duration="1600">
-            Hi, I’m Garry, a passionate full-stack developer and engineer from
-            Madagascar.
-          </p>
-          <p data-aos="fade-up" data-aos-duration="1700">
-            My specialization lines into building user-friendly websites.
+            I'm a software engineer based in Madagascar, with a focus on
+            building websites and mobile applications that solve problems and
+            meet user needs.
           </p>
         </div>
 
@@ -116,102 +106,6 @@
       </div>
     </section>
     <!-- END HERO -->
-    <!-- ABOUT ME -->
-    <section class="section__about_me" id="about">
-      <div class="flex items-center justify-between">
-        <img
-          src="assets/images/about-me.png"
-          alt="profile photo"
-          width="510"
-          height="489"
-          class="hidden h-full md:inline md:w-1/2"
-          data-aos="fade-up"
-          data-aos-duration="1000" />
-        <div class="flex flex-col text-base text-justify lg:basis-1/2">
-          <h1 class="title" data-aos="fade-up" data-aos-duration="1000">
-            About Me
-          </h1>
-          <p
-            class="mb-3 padding-t lg:text-lg"
-            data-aos="fade-up"
-            data-aos-duration="1200">
-            Hello, my name is TAHINJANAHARY Josimar Garry Ismaël. I am a
-            full-stack developer and interested in web development and
-            conception of application.
-          </p>
-          <p class="lg:text-lg" data-aos="fade-up" data-aos-duration="1300">
-            I graduated from ENI, the National School of Computer Science in
-            Madagascar, and obtained a degree in computer science engineering.
-            Since my childhood, I have been passionate about technology. I enjoy
-            challenges, am a fast learner, and can adapt quickly to any
-            situation.
-          </p>
-          <div class="flex items-center gap-4 socials">
-            <p
-              class="text-sm lg:text-base"
-              data-aos="fade-up"
-              data-aos-duration="1400">
-              Follow me
-            </p>
-            <div class="flex items-center gap-3">
-              <a
-                href="https://web.facebook.com/garrismael"
-                data-aos="fade-up"
-                data-aos-duration="1400">
-                <img
-                  src="assets/images/facebook.png"
-                  alt="facebook"
-                  width="50"
-                  height="50" />
-              </a>
-              <a href="" data-aos="fade-up" data-aos-duration="1500">
-                <img
-                  src="assets/images/instagram.png"
-                  alt="instagram"
-                  width="50"
-                  height="50" />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/garryismael"
-                data-aos="fade-up"
-                data-aos-duration="1600">
-                <img
-                  src="assets/images/linkedin.png"
-                  alt="linkedin"
-                  width="50"
-                  height="50" />
-              </a>
-              <a href="" data-aos="fade-up" data-aos-duration="1700">
-                <img
-                  src="assets/images/twitter.png"
-                  alt="twitter"
-                  width="50"
-                  height="50" />
-              </a>
-            </div>
-          </div>
-          <div
-            class="flex flex-col gap-4 mt-6 font-semibold text-center md:flex-row lg:text-lg">
-            <a
-              href="#projects"
-              class="rounded-full bg-brand-600 btn"
-              data-aos="fade-up"
-              data-aos-duration="1800"
-              >View Works</a
-            >
-            <a
-              href="#"
-              class="border border-white rounded-full btn"
-              data-aos="fade-up"
-              data-aos-duration="1900">
-              <span class="mr-2">Download CV</span>
-              <i class="fa-solid fa-download"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- END ABOUT ME -->
     <!-- SERVICES -->
     <section class="section__services" id="services">
       <h1 class="title" data-aos="fade-up" data-aos-duration="1600">
@@ -225,7 +119,7 @@
         vision to fruition.
       </p>
       <div
-        class="flex flex-col items-center w-full h-auto mt-6 gap-9 lg:flex-row lg:justify-between">
+        class="grid items-center w-full h-auto grid-cols-1 mt-6 gap-9 lg:grid-cols-3 auto-rows-[1fr] lg:justify-between">
         <div class="card" data-aos="fade-up" data-aos-duration="2000">
           <div class="flex items-center gap-6">
             <div class="icon bg-brand-600">
@@ -263,14 +157,15 @@
         <div class="card" data-aos="fade-up" data-aos-duration="3000">
           <div class="flex items-center gap-6">
             <div class="bg-green-600 icon">
-              <i class="fa-solid fa-person-chalkboard"></i>
+              <i class="text-xl fa-solid fa-code-merge"></i>
             </div>
-            <h1 class="text-xl font-bold md:text-2xl">Teaching</h1>
+            <h1 class="text-xl font-bold md:text-2xl">Web Integration</h1>
           </div>
           <p class="text-base lg:text-lg">
-            I provide concise courses on relevant technologies, covering both
-            basics and advanced topics. My aim is to help you understand
-            fundamental concepts efficiently.
+            I specialize in integrating diverse web technologies to deliver
+            seamless and responsive solutions. Whether it's connecting APIs,
+            building interactive components, or ensuring cross-platform
+            compatibility, I strive for excellence in every project.
           </p>
           <a href="#contact">
             <span class="mr-2">Contact Me</span>
@@ -285,16 +180,17 @@
       <h1 class="title" data-aos="fade-up" data-aos-duration="1000">
         My Skills
       </h1>
-      <div
-        class="flex flex-wrap items-center content-between justify-center gap-6 padding-t lg:justify-between">
+      <div class="grid grid-cols-2 gap-6 pt-4 lg:grid-cols-4">
         <div
           class="flex flex-col items-center justify-center"
           data-aos="fade-up"
           data-aos-duration="1100">
-          <circle-progress
-            value="90"
-            max="100"
-            text-format="percent"></circle-progress>
+          <img
+            src="assets/images/skills/java.png"
+            alt="java"
+            width="256"
+            height="256"
+            class="w-24 h-24 lg:w-40 lg:h-40" />
           <p
             class="text-lg font-bold text-center uppercase md:text-xl lg:text-2xl">
             java
@@ -304,10 +200,12 @@
           class="flex flex-col items-center justify-center"
           data-aos="fade-up"
           data-aos-duration="1200">
-          <circle-progress
-            value="90"
-            max="100"
-            text-format="percent"></circle-progress>
+          <img
+            src="assets/images/skills/python.png"
+            alt="java"
+            width="256"
+            height="256"
+            class="w-24 h-24 lg:w-40 lg:h-40" />
           <p
             class="text-lg font-bold text-center uppercase md:text-xl lg:text-2xl">
             python
@@ -317,10 +215,12 @@
           class="flex flex-col items-center justify-center"
           data-aos="fade-up"
           data-aos-duration="1300">
-          <circle-progress
-            value="80"
-            max="100"
-            text-format="percent"></circle-progress>
+          <img
+            src="assets/images/skills/angular.png"
+            alt="java"
+            width="1920"
+            height="1920"
+            class="w-24 h-24 lg:w-40 lg:h-40" />
           <p
             class="text-lg font-bold text-center uppercase md:text-xl lg:text-2xl">
             angular
@@ -330,10 +230,12 @@
           class="flex flex-col items-center justify-center"
           data-aos="fade-up"
           data-aos-duration="1400">
-          <circle-progress
-            value="85"
-            max="100"
-            text-format="percent"></circle-progress>
+          <img
+            src="assets/images/skills/react.png"
+            alt="java"
+            width="256"
+            height="256"
+            class="w-24 h-24 lg:w-40 lg:h-40" />
           <p
             class="text-lg font-bold text-center uppercase md:text-xl lg:text-2xl">
             react
@@ -343,10 +245,12 @@
           class="flex flex-col items-center justify-center"
           data-aos="fade-up"
           data-aos-duration="1500">
-          <circle-progress
-            value="85"
-            max="100"
-            text-format="percent"></circle-progress>
+          <img
+            src="assets/images/skills/typescript.svg"
+            alt="java"
+            width="256"
+            height="256"
+            class="w-24 h-24 lg:w-40 lg:h-40" />
           <p
             class="text-lg font-bold text-center uppercase md:text-xl lg:text-2xl">
             typescript
@@ -356,10 +260,12 @@
           class="flex flex-col items-center justify-center"
           data-aos="fade-up"
           data-aos-duration="1600">
-          <circle-progress
-            value="85"
-            max="100"
-            text-format="percent"></circle-progress>
+          <img
+            src="assets/images/skills/javascript.png"
+            alt="java"
+            width="1052"
+            height="1052"
+            class="w-24 h-24 lg:w-40 lg:h-40" />
           <p
             class="text-lg font-bold text-center uppercase md:text-xl lg:text-2xl">
             javascript
@@ -369,10 +275,11 @@
           class="flex flex-col items-center justify-center"
           data-aos="fade-up"
           data-aos-duration="1700">
-          <circle-progress
-            value="80"
-            max="100"
-            text-format="percent"></circle-progress>
+          <img
+            src="assets/images/skills/css.svg"
+            width="1000"
+            height="1000"
+            class="w-24 h-24 lg:w-40 lg:h-40" />
           <p
             class="text-lg font-bold text-center uppercase md:text-xl lg:text-2xl">
             css
@@ -382,10 +289,12 @@
           class="flex flex-col items-center justify-center"
           data-aos="fade-up"
           data-aos-duration="1800">
-          <circle-progress
-            value="90"
-            max="100"
-            text-format="percent"></circle-progress>
+          <img
+            src="assets/images/skills/uml.svg"
+            alt="java"
+            width="400"
+            height="291"
+            class="w-24 h-24 lg:w-40 lg:h-40" />
           <p
             class="text-lg font-bold text-center uppercase md:text-xl lg:text-2xl">
             UML
@@ -403,7 +312,19 @@
         <div class="swiper-wrapper">
           <div
             class="swiper-slide p-6 border border-white rounded-3xl !flex flex-col gap-2 h-90 lg:h-[400px]">
-            <h1 class="text-base lg:text-lg">March 2024 - Present</h1>
+            <h1 class="text-base lg:text-lg">February 2025 - Present</h1>
+            <h2 class="text-xl font-bold lg:text-2xl">Fullstack Developer</h2>
+            <h3 class="text-xs lg:text-base">WISPULSE</h3>
+            <p class="text-base lg:text-lg">
+              As a Web and Mobile Application Developer, I design, develop, and
+              maintain high-quality web and mobile applications. I focus on
+              creating intuitive, responsive web interfaces, developing showcase
+              and e-commerce websites, and ensuring security and performance.
+            </p>
+          </div>
+          <div
+            class="swiper-slide p-6 border border-white rounded-3xl !flex flex-col gap-2 h-90 lg:h-[400px]">
+            <h1 class="text-base lg:text-lg">March 2024 - January 2025</h1>
             <h2 class="text-xl font-bold lg:text-2xl">Software Engineer</h2>
             <h3 class="text-xs lg:text-base">Code & Scale</h3>
             <p class="text-base lg:text-lg">
@@ -416,7 +337,6 @@
               interoperability.
             </p>
           </div>
-
           <div
             class="swiper-slide p-6 border border-white rounded-3xl !flex flex-col gap-2 h-90 lg:h-[400px]">
             <h1 class="text-base lg:text-lg">June 2023-October 2023</h1>

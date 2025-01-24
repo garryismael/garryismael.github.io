@@ -595,10 +595,10 @@ video {
 }
 
 .btn {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
   padding-left: 1rem;
   padding-right: 1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 @media (min-width: 768px) {
@@ -625,10 +625,6 @@ video {
   margin-bottom: 0.5rem;
 }
 
-.mb-3 {
-  margin-bottom: 0.75rem;
-}
-
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -653,6 +649,10 @@ video {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .hidden {
   display: none;
 }
@@ -669,8 +669,8 @@ video {
   height: auto;
 }
 
-.h-full {
-  height: 100%;
+.h-24 {
+  height: 6rem;
 }
 
 .w-5 {
@@ -679,6 +679,31 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-24 {
+  width: 6rem;
+}
+
+.max-w-fit {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+.max-w-md {
+  max-width: 28rem;
+}
+
+.max-w-lg {
+  max-width: 32rem;
+}
+
+.max-w-xl {
+  max-width: 36rem;
+}
+
+.max-w-2xl {
+  max-width: 42rem;
 }
 
 .flex-1 {
@@ -691,6 +716,18 @@ video {
 
 .basis-full {
   flex-basis: 100%;
+}
+
+.auto-rows-\[1fr\] {
+  grid-auto-rows: 1fr;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -719,10 +756,6 @@ video {
 
 .gap-2 {
   gap: 0.5rem;
-}
-
-.gap-3 {
-  gap: 0.75rem;
 }
 
 .gap-4 {
@@ -826,10 +859,6 @@ video {
   text-align: center;
 }
 
-.text-justify {
-  text-align: justify;
-}
-
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -865,12 +894,21 @@ video {
   line-height: 1rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
 
 .font-semibold {
   font-weight: 600;
+}
+
+.font-medium {
+  font-weight: 500;
 }
 
 .uppercase {
@@ -1010,10 +1048,10 @@ circle-progress::part(value) {
 
 .swiper-pagination-bullet {
   bottom: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
   margin-left: 0.25rem;
   margin-right: 0.25rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
   height: 0.5rem;
   width: 0.5rem;
   --tw-bg-opacity: 1;
@@ -1200,8 +1238,8 @@ circle-progress::part(value) {
 
 .section__services .card {
   display: flex;
-  height: 24rem;
   flex-direction: column;
+  justify-content: space-between;
   gap: 1.5rem;
   border-radius: 1.5rem;
   border-width: 1px;
@@ -1384,14 +1422,6 @@ footer .contacts > div {
 /* END FOOTER */
 
 @media (min-width: 768px) {
-  .md\:inline {
-    display: inline;
-  }
-
-  .md\:w-1\/2 {
-    width: 50%;
-  }
-
   .md\:w-fit {
     width: -moz-fit-content;
     width: fit-content;
@@ -1442,12 +1472,32 @@ footer .contacts > div {
     height: 400px;
   }
 
+  .lg\:h-40 {
+    height: 10rem;
+  }
+
+  .lg\:w-40 {
+    width: 10rem;
+  }
+
   .lg\:flex-1 {
     flex: 1 1 0%;
   }
 
   .lg\:basis-1\/2 {
     flex-basis: 50%;
+  }
+
+  .lg\:auto-rows-\[1fr\] {
+    grid-auto-rows: 1fr;
+  }
+
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .lg\:flex-row {
@@ -1465,6 +1515,20 @@ footer .contacts > div {
   .lg\:py-12 {
     padding-top: 3rem;
     padding-bottom: 3rem;
+  }
+
+  .lg\:py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .lg\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .lg\:pt-10 {
+    padding-top: 2.5rem;
   }
 
   .lg\:text-2xl {
@@ -1495,5 +1559,10 @@ footer .contacts > div {
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .lg\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 }
