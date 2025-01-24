@@ -28,3 +28,15 @@ const emblaApi = EmblaCarousel(viewportNode, options);
 
 prevButtonNode.addEventListener('click', emblaApi.scrollPrev, false)
 nextButtonNode.addEventListener('click', emblaApi.scrollNext, false)
+
+
+const projectNode = document.querySelector(".embla_project");
+const projectViewportNode = projectNode.querySelector(".embla__viewport_project");
+const prevProjectButtonNode = projectNode.querySelector(".embla__prev_project");
+const nextProjectButtonNode = projectNode.querySelector(".embla__next_project");
+
+const projectOptions = { loop: false };
+const emblaProjectApi = EmblaCarousel(projectViewportNode, projectOptions);
+
+prevProjectButtonNode.addEventListener('click', emblaProjectApi.scrollPrev, false)
+nextProjectButtonNode.addEventListener('click', emblaProjectApi.scrollNext, false)

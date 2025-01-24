@@ -608,12 +608,21 @@ video {
   }
 }
 
+.static {
+  position: static;
+}
+
 .relative {
   position: relative;
 }
 
 .top-1\/2 {
   top: 50%;
+}
+
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 .mb-2 {
@@ -662,6 +671,10 @@ video {
 
 .h-24 {
   height: 6rem;
+}
+
+.h-64 {
+  height: 16rem;
 }
 
 .h-auto {
@@ -817,6 +830,16 @@ video {
 .bg-pink-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(219 39 119 / var(--tw-bg-opacity));
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.object-fill {
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .p-6 {
@@ -1265,6 +1288,22 @@ circle-progress::part(value) {
 
 /* PROJECTS */
 
+@media (min-width: 768px) {
+  .embla__viewport_project .embla__container {
+    grid-auto-columns: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .embla__viewport_project .embla__container {
+    grid-auto-columns: 50%;
+  }
+}
+
+.embla__viewport_project .embla__container {
+  gap: 2rem;
+}
+
 .section__projects .swiper-slide {
   border: 1px solid rgba(255, 255, 255, 0.08);
   background: linear-gradient(
@@ -1446,10 +1485,6 @@ footer .contacts > div:first-child {
     flex-basis: 50%;
   }
 
-  .lg\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
   .lg\:grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
@@ -1480,6 +1515,11 @@ footer .contacts > div:first-child {
     line-height: 2rem;
   }
 
+  .lg\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .lg\:text-5xl {
     font-size: 3rem;
     line-height: 1;
@@ -1497,6 +1537,11 @@ footer .contacts > div:first-child {
 
   .lg\:text-lg {
     font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .lg\:text-xl {
+    font-size: 1.25rem;
     line-height: 1.75rem;
   }
 }
