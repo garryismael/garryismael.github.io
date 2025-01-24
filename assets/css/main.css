@@ -608,17 +608,12 @@ video {
   }
 }
 
-.static {
-  position: static;
-}
-
 .relative {
   position: relative;
 }
 
-.my-3 {
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
+.top-1\/2 {
+  top: 50%;
 }
 
 .mb-2 {
@@ -635,6 +630,10 @@ video {
 
 .mr-2 {
   margin-right: 0.5rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
 }
 
 .mt-6 {
@@ -657,53 +656,37 @@ video {
   display: none;
 }
 
-.h-5 {
-  height: 1.25rem;
-}
-
-.h-64 {
-  height: 16rem;
-}
-
-.h-auto {
-  height: auto;
+.h-10 {
+  height: 2.5rem;
 }
 
 .h-24 {
   height: 6rem;
 }
 
-.w-5 {
-  width: 1.25rem;
+.h-auto {
+  height: auto;
 }
 
-.w-full {
-  width: 100%;
+.w-10 {
+  width: 2.5rem;
 }
 
 .w-24 {
   width: 6rem;
 }
 
-.max-w-fit {
-  max-width: -moz-fit-content;
-  max-width: fit-content;
-}
-
-.max-w-md {
-  max-width: 28rem;
-}
-
-.max-w-lg {
-  max-width: 32rem;
-}
-
-.max-w-xl {
-  max-width: 36rem;
+.w-full {
+  width: 100%;
 }
 
 .max-w-2xl {
   max-width: 42rem;
+}
+
+.max-w-fit {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 
 .flex-1 {
@@ -716,6 +699,11 @@ video {
 
 .basis-full {
   flex-basis: 100%;
+}
+
+.-translate-y-1\/2 {
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .auto-rows-\[1fr\] {
@@ -738,12 +726,12 @@ video {
   flex-wrap: wrap;
 }
 
-.content-between {
-  align-content: space-between;
-}
-
 .items-center {
   align-items: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .justify-center {
@@ -756,6 +744,10 @@ video {
 
 .gap-2 {
   gap: 0.5rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
 }
 
 .gap-4 {
@@ -823,16 +815,6 @@ video {
   background-color: rgb(219 39 119 / var(--tw-bg-opacity));
 }
 
-.object-cover {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.object-fill {
-  -o-object-fit: fill;
-     object-fit: fill;
-}
-
 .p-6 {
   padding: 1.5rem;
 }
@@ -869,6 +851,11 @@ video {
   line-height: 2.25rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -894,21 +881,16 @@ video {
   line-height: 1rem;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
 .font-bold {
   font-weight: 700;
 }
 
-.font-semibold {
-  font-weight: 600;
-}
-
 .font-medium {
   font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .uppercase {
@@ -1010,59 +992,6 @@ circle-progress::part(value) {
   font-size: 40px;
   font-weight: 600;
   color: #7d2ae8;
-}
-
-.swiper {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow-x: hidden;
-}
-
-.swiper .swiper-button-prev,
-.swiper .swiper-button-next {
-  font-size: 1.5rem;
-  line-height: 2rem;
-  --tw-text-opacity: 1;
-  color: rgb(127 86 217 / var(--tw-text-opacity));
-}
-
-.swiper .swiper-button-prev {
-  left: 0px;
-}
-
-.swiper .swiper-button-next {
-  right: 0px;
-}
-
-.swiper .swiper-button-prev::after,
-.swiper .swiper-button-next::after {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-.swiper .swiper-pagination {
-  bottom: 0px;
-}
-
-.swiper-pagination-bullet {
-  bottom: 0px;
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  height: 0.5rem;
-  width: 0.5rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
-}
-
-.swiper-pagination-bullet-active {
-  height: 0.75rem;
-  width: 0.75rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .text-gradient {
@@ -1238,6 +1167,7 @@ circle-progress::part(value) {
 
 .section__services .card {
   display: flex;
+  height: 100%;
   flex-direction: column;
   justify-content: space-between;
   gap: 1.5rem;
@@ -1254,9 +1184,8 @@ circle-progress::part(value) {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .section__services .card {
-    height: 24rem;
     width: 24rem;
   }
 }
@@ -1308,6 +1237,26 @@ circle-progress::part(value) {
 }
 
 /* END SKILLS */
+
+/* EXPERIENCES */
+
+.embla__container {
+  grid-auto-columns: 100%;
+}
+
+@media (min-width: 768px) {
+  .embla__container {
+    grid-auto-columns: 50%;
+  }
+}
+
+.embla__container {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 2rem;
+}
+
+/* END EXPERIENCES */
 
 /* PROJECTS */
 
@@ -1468,12 +1417,12 @@ footer .contacts > div {
     display: none;
   }
 
-  .lg\:h-\[400px\] {
-    height: 400px;
-  }
-
   .lg\:h-40 {
     height: 10rem;
+  }
+
+  .lg\:h-\[400px\] {
+    height: 400px;
   }
 
   .lg\:w-40 {
@@ -1486,14 +1435,6 @@ footer .contacts > div {
 
   .lg\:basis-1\/2 {
     flex-basis: 50%;
-  }
-
-  .lg\:auto-rows-\[1fr\] {
-    grid-auto-rows: 1fr;
-  }
-
-  .lg\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .lg\:grid-cols-4 {
@@ -1512,19 +1453,9 @@ footer .contacts > div {
     justify-content: space-between;
   }
 
-  .lg\:py-12 {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-
   .lg\:py-8 {
     padding-top: 2rem;
     padding-bottom: 2rem;
-  }
-
-  .lg\:py-10 {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
   }
 
   .lg\:pt-10 {
@@ -1536,9 +1467,9 @@ footer .contacts > div {
     line-height: 2rem;
   }
 
-  .lg\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
+  .lg\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 
   .lg\:text-7xl {
@@ -1555,14 +1486,14 @@ footer .contacts > div {
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
+}
 
-  .lg\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+@media (min-width: 1280px) {
+  .xl\:w-full {
+    width: 100%;
   }
 
-  .lg\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
+  .xl\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }

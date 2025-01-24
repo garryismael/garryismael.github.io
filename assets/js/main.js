@@ -1,46 +1,30 @@
 AOS.init();
 
-const swiper = new Swiper(".swiper", {
-    slidesPerView: 1,
-    spaceBetween: 8,
-    breakpoints: {
-      // when window width is >= 640px
-      992: {
-        slidesPerView: 3,
-        spaceBetween: 24,
-      },
-    },
-    centeredSlides: true,
-    centeredSlidesBounds: true,
-    // Optional parameters
-    direction: "horizontal",
-    loop: false,
-    pagination: {
-      el: ".swiper-pagination",
-      dynamicBullets: true,
-      dynamicMainBullets: 3
-    },
-    // Navigation arrows
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
-  
-  const hamburger = document.querySelector(".hamburger");
-  const navigation = document.querySelector("header > nav");
-  const links = document.querySelectorAll(".navigations li");
-  
-  hamburger.addEventListener("click", () => {
-    navigation.classList.toggle("open");
-    hamburger.classList.toggle("open");
-  
-    links.forEach(link => {
-      link.classList.toggle("fade");
-    });
-  });
-  
+const hamburger = document.querySelector(".hamburger");
+const navigation = document.querySelector("header > nav");
+const links = document.querySelectorAll(".navigations li");
 
-  const year = document.querySelector("#year");
+hamburger.addEventListener("click", () => {
+  navigation.classList.toggle("open");
+  hamburger.classList.toggle("open");
 
-  year.textContent = new Date().getFullYear();
+  links.forEach((link) => {
+    link.classList.toggle("fade");
+  });
+});
+
+const year = document.querySelector("#year");
+
+year.textContent = new Date().getFullYear();
+
+// Carousel
+const rootNode = document.querySelector(".embla");
+const viewportNode = rootNode.querySelector(".embla__viewport");
+const prevButtonNode = rootNode.querySelector(".embla__prev");
+const nextButtonNode = rootNode.querySelector(".embla__next");
+
+const options = { loop: false };
+const emblaApi = EmblaCarousel(viewportNode, options);
+
+prevButtonNode.addEventListener('click', emblaApi.scrollPrev, false)
+nextButtonNode.addEventListener('click', emblaApi.scrollNext, false)
