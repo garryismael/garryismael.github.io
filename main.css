@@ -8,15 +8,20 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
+  box-sizing: border-box;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Inter";
-  @apply overflow-x-hidden text-white bg-slate-950;
+  @apply text-white bg-slate-950;
 }
 
 ::-webkit-scrollbar {
@@ -56,26 +61,6 @@ circle-progress::part(value) {
   stroke-width: 14;
   stroke-linecap: round;
   @apply stroke-brand-600;
-}
-
-.circular-progress {
-  position: relative;
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  background: conic-gradient(white 3.6deg, #d946ef 0deg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.circular-progress::before {
-  content: "";
-  position: absolute;
-  width: 210px;
-  height: 210px;
-  border-radius: 50%;
-  background-color: #fff;
 }
 
 .progress-value {
