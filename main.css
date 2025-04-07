@@ -198,7 +198,6 @@ circle-progress::part(value) {
   gap: 2rem;
 }
 
-
 /* END EXPERIENCES */
 
 /* PROJECTS */
@@ -266,7 +265,12 @@ footer .contacts > div {
 }
 
 footer .contacts > div:first-child {
-  @apply flex-nowrap
+  @apply flex-nowrap;
 }
 
 /* END FOOTER */
+
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
